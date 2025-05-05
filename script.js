@@ -3,8 +3,8 @@ const todoInput = document.getElementById("todo-input");
 const todoListUL = document.getElementById("todo-list");
 
 let allTodos = getTodos();
-updateTodoList();
 
+updateTodoList();
 todoForm.addEventListener("submit", function (e) {
   e.preventDefault();
   addTodo();
@@ -61,6 +61,7 @@ function createTodoItem(todo, todoindex) {
   deleteButton.addEventListener("click", () => {
     deleteTodoItem(todoindex);
   });
+
   const checkbox = todoLI.querySelector("input");
   checkbox.addEventListener("change", () => {
     allTodos[todoindex].completed = checkbox.checked;

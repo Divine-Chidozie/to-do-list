@@ -1,5 +1,0 @@
- fill="transparent"
-
- fill="transparent"
-
-  fill="var(--secondary-color)"
